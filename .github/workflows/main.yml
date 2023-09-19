@@ -20,6 +20,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    
       - uses: actions/checkout@v3
       - name: Use Node.js
       - uses: actions/setup-node@v3
@@ -30,4 +31,4 @@ jobs:
         run: npm ci
 
       - name: Run test
-      -  run: npm test
+      - run: npm test
